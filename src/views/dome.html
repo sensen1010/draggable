@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel='stylesheet' type='text/css' href='../resource/preview.css'>
+    <script src='../resource/jquery-1.9.1.min.js' type='text/javascript'></script>
+    <script src='../resource/base.js'></script>
+    <link rel='stylesheet' href='../resource/animate.min.css' type='text/css' />
+    <script type='text/javascript'>var apistore_url = 'http://lango-tech.cn/apm-web/f/common/apiStore';</script>
+    <script src='../resource/touch.min.js'></script>
+    <script>$(document).ready(function () { var videoTouchFlag = false; touch.on('.videoTouchSwitchDiv', 'touchstart', function (ev) { ev.preventDefault(); }); touch.on('.videoTouchSwitchDiv', 'swipeleft', function (e) { if (!$(this).attr('interact-touch') && videoTouchFlag) { return false; } videoTouchFlag = true; try { var nextProgram = '{ "action": "nextProgram"}'; window.programswitch.programDownUp(nextProgram); } catch (e) { } setTimeout(function () { videoTouchFlag = false; }, 50); }); touch.on('.videoTouchSwitchDiv', 'swiperight', function (e) { if (!$(this).attr('interact-touch') && videoTouchFlag) { return false; } videoTouchFlag = true; try { var lastProgram = '{ "action": "lastProgram"}'; window.programswitch.programDownUp(lastProgram); } catch (e) { } setTimeout(function () { videoTouchFlag = false; }, 50); }); });</script>
+    <script src='../resource/kxbdSuperMarquee.js'></script>
+    <script src='../resource/touch.min.js'></script>
+    <script type='text/javascript'>var timerTasks = {};</script>
+</head>
+
+<body>
+    <style type='text/css'></style>
+    <div class='dn-bg' long='63'
+        style='overflow: hidden;z-index:-1; position: absolute;background:#000;background-size:100% 100%;background-repeat:no-repeat;left:0px;top:0px;width:1920px;height:1080px;'>
+        <div id='topfd1' curanimclass='' class='content-center-topfd ' language='zh_CN' soundset='1'
+            style='overflow: hidden; position: absolute;left:0px;top:0px;background-color:rgb(61, 73, 95);font-size:48.654691828254855;background-size:100% 100%;background-repeat:no-repeat;width:1920px;height:1080px;'>
+            <img class='' alt='thumb'
+                style='z-index:2;position: absolute;left:657.431906614786px;top:146.42801556420233px;width:420.16622568093385px;height:236.07782101167317px'
+                src='../apm_file/img_path/2ee896b9789baa9a8d69419702c0697e.jpg_thumb.jpg' /><img id='1' widget_id='3'
+                data-name='图片2' elename='' class='newimage widget_click imgTouchHandleDeal   ' oldid='image_2'
+                curanimclass=''
+                style='z-index:2;position: absolute;left:657.431906614786px;top:146.42801556420233px;width:420.16622568093385px;height:236.07782101167317px'
+                title='5,../apm_file/img_path/2ee896b9789baa9a8d69419702c0697e.jpg,../apm_file/img_path/2ee896b9789baa9a8d69419702c0697e.jpg'
+                src='../apm_file/img_path/2ee896b9789baa9a8d69419702c0697e.jpg' />
+            <div widget_id='2' data-name='文本1' id='fontstopfd11' elename='' class='widget_click   ele-font'
+                oldid='fonts_1' curanimclass=''
+                style='overflow:hidden;white-space:nowrap;width:315.2684824902724px;height:127.00389105058366px;position:absolute;top:0.0px;left:694.7859922178989px;z-index:1;color:rgb(0, 0, 0);text-align:left;font-size:24.000012022800004px;font-weight:null;font-style:null;background-color:transparent;'
+                txtanimtype='none'>
+                <div id="textarea_fonts_1" class="ql-editor"
+                    style="padding-left:2px;width:211.0px;height:85.0px;overflow:hidden;transform:scale(1.4941634241245136,1.4941634241245136);margin-left:52.134241245136195px;margin-top:21.00194552529183px"
+                    txtedid="txtedid1" tabindex="1" contenteditable="false">
+                    <div>
+                        asdasdsad
+                    </div>
+                </div>
+            </div>
+            <div widget_id='4' data-name='视频3' curanimclass='null' class='ele-video widget_click videoTouchSwitchDiv '
+                oldid='video_3'
+                curimglist='[{"type":"video","src":"/apm-web/apm_file/video_thumbnail/2d61e9611e7ef942251dd172f16e6e79.jpg","name":"1324195_VJshi_1761f5e34a0807211cea089b03a30479.mp4","source":"/apm-web/apm_file/program_video_path/2d61e9611e7ef942251dd172f16e6e79.mp4","long":"63","attrid":"47c42b6e86a33bd395d213"}]'
+                style='overflow:hidden;white-space:nowrap;width:331.54739299610895px;height:203.20622568093387px;position:absolute;top:61.26070038910506px;left:165.85214007782102px;z-index:3;'>
+            </div>
+        </div>
+    </div>
+    <div id='mixedHtml' class='hide'></div>
+    <script> function animActive(imgonlykey, func) { var obj = $('img[imgonlykey="' + imgonlykey + '"]'); var animClass = obj.attr("curanimclass"); if (animClass == undefined || animClass == null || animClass == '' || animClass == 'undefined') { func(imgonlykey); } else { obj.removeClass("animated " + animClass); setTimeout(function () { obj.css("animation-delay", "0s").css("-webkit-animation-delay", "0s"); obj.addClass("animated " + animClass); func(imgonlykey); }, 300); } } var cur = getprocesssec(); var dorun = false; var imgs; var iframes; var iframe; var img; var spis; var imgonlykeyindex = 0; if (cur > 0) { initShow(cur); } g_startShowTimer = setInterval("startShow()", 1000); function startShow() { if (playstate === '0' && g_turnPageState === '0') { return; } if (cur > 36000) { cur = 0; } cur++; if (!dorun) { dorun = true; imgs = $(".newimage"); iframes = document.getElementsByTagName("iframe"); } imgs.each(function () { img = $(this); if (img.hasClass('hide')) { return; } var imgonlykey = img.attr("imgonlykey"); if (!imgonlykey) { imgonlykeyindex++; img.attr("imgonlykey", imgonlykeyindex); imgonlykey = imgonlykeyindex; } if (img.attr('title') != undefined) { if (img.attr('title').length > 0) { spis = img.attr('title').split(','); if (typeof (img.attr("imgCrouselTime")) != "undefined") { var imgCrouselTime = img.attr('imgCrouselTime'); if ((cur >= imgCrouselTime) || (g_turnPageState !== '0')) { var idc = img.attr('id'); (g_turnPageState === '1' || g_turnPageState === '4') ? idc-- : idc++; img.attr('id', idc); if (img.attr('id') >= spis.length) { img.attr('id', 1); } if (img.attr('id') <= 0) { img.attr('id', img.attr('title').split(',').length - 1); } img.attr("imgCrouselTime", parseInt(img.attr('title').split(',')[0]) + cur); animActive(imgonlykey, function (imgonlykey) { var obj = $('img[imgonlykey="' + imgonlykey + '"]'); if (!obj.attr('title')) return; var spis = obj.attr('title').split(','); obj.attr('src', spis[obj.attr('id')]); }); } } else { if ((cur % spis[0] == 0) || (g_turnPageState !== '0')) { var idc = img.attr('id'); (g_turnPageState === '1' || g_turnPageState === '4') ? idc-- : idc++; img.attr('id', idc); if (img.attr('id') >= spis.length) { img.attr('id', 1); } if (img.attr('id') <= 0) { img.attr('id', img.attr('title').split(',').length - 1); } if (g_turnPageState !== '0') { img.attr('imgCrouselTime', parseInt(img.attr('title').split(',')[0]) + cur); } animActive(imgonlykey, function (imgonlykey) { var obj = $('img[imgonlykey="' + imgonlykey + '"]'); if (!obj.attr('title')) return; var spis = obj.attr('title').split(','); obj.attr('src', spis[obj.attr('id')]); }); } } } } }); for (var i = 0; i < iframes.length; i++) { iframe = iframes[i]; if (iframe.title.length > 0 && iframe.className.indexOf('webpage') == -1) { if (cur % iframe.title == 0) { iframe.src = iframe.src; } } } } function animActive(imgonlykey, func) { var obj = $('img[imgonlykey="' + imgonlykey + '"]'); var animClass = obj.attr('curanimclass'); if (animClass == undefined || animClass == null || animClass == '' || animClass == 'undefined') { func(imgonlykey); } else { obj.removeClass('animated ' + animClass); setTimeout(function () { func(imgonlykey); obj.load(function () { obj.css('animation-delay', '0s').css('-webkit-animation-delay', '0s'); obj.addClass('animated ' + animClass); }); }, 300); } } function initShow() { if (cur > 36000) { cur = cur % 36000; } if (!dorun) { dorun = true; imgs = $(".newimage"); iframes = document.getElementsByTagName("iframe"); } imgs.each(function () { img = $(this); if (img.hasClass('hide')) { return; } if (img.attr('title') != undefined) { if (img.attr('title').length > 0) { spis = img.attr('title').split(','); var idc = parseInt(cur / spis[0]) + 1; if (idc >= spis.length) { idc = parseInt(idc % spis.length); } img.attr('id', idc); img.attr('src', spis[img.attr('id')]); } } }); } $(document).ready(function () { var imgTouchFlag = false; touch.on('.imgTouchHandleDeal', 'swipeleft', function (e) { if (!$(this).attr('interact-touch') && imgTouchFlag) { return false; } imgTouchFlag = true; var imgCrouselImgonlykey = $(this).attr("imgonlykey"); if (typeof (imgCrouselImgonlykey) != "undefined" && $(this).attr('title')) { var imgCrouselIdc = $(this).attr('id'); imgCrouselIdc++; $(this).attr('id', imgCrouselIdc); if ($(this).attr('id') >= $(this).attr('title').split(',').length) { $(this).attr('id', 1); } $(this).attr("imgCrouselTime", 20 + cur); animActive(imgCrouselImgonlykey, function (imgCrouselImgonlykey) { var obj = $('img[imgonlykey="' + imgCrouselImgonlykey + '"]'); if (!obj.attr('title')) return; var spis = obj.attr('title').split(','); obj.attr('src', spis[obj.attr('id')]); }); } setTimeout(function () { imgTouchFlag = false; }, 50); }); touch.on('.imgTouchHandleDeal', 'swiperight', function (e) { if (!$(this).attr('interact-touch') && imgTouchFlag) { return false; } imgTouchFlag = true; var imgCrouselImgonlykey = $(this).attr("imgonlykey"); if (typeof (imgCrouselImgonlykey) != "undefined" && $(this).attr('title')) { var imgCrouselIdc = $(this).attr('id'); imgCrouselIdc--; $(this).attr('id', imgCrouselIdc); if (parseInt($(this).attr('id')) <= 0) { $(this).attr('id', $(this).attr('title').split(',').length - 1); } $(this).attr("imgCrouselTime", 20 + cur); animActive(imgCrouselImgonlykey, function (imgCrouselImgonlykey) { var obj = $('img[imgonlykey="' + imgCrouselImgonlykey + '"]'); if (!obj.attr('title')) return; var spis = obj.attr('title').split(','); obj.attr('src', spis[obj.attr('id')]); }); } setTimeout(function () { imgTouchFlag = false; }, 50); }); });</script>
+    <script src='../resource/preview.js'></script>
+    <script src='../resource/init.js'></script>
+</body>
+
+</html>
